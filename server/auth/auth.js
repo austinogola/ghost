@@ -105,6 +105,8 @@ const check=async(email)=>{
 const checkUsage=async(req,res)=>{
     const {email}=req.query
 
+    console.log('Checking for',email);
+
     try{
         User.findOne({email})
         .then(resp=>{

@@ -18,7 +18,8 @@ const formMail=async(req,res,prompt)=>{
 
     // return new Promise(async(resolve,reject)=>{
         
-        let content= `Write an email ${prompt}`
+        // let content= `Write an email ${prompt}`
+        let content= prompt
 
         let lan='en'
 
@@ -51,7 +52,7 @@ const formMail=async(req,res,prompt)=>{
                     
                     if(msg=='[DONE]'){
 
-                        res.write('STREAM COMPLETELEY FINISHED','utf8')
+                        // res.write('STREAM COMPLETELEY FINISHED','utf8')
                     }
                     else{
                         try {
@@ -62,15 +63,12 @@ const formMail=async(req,res,prompt)=>{
                                 let text=delta.content
                                 res.write(text,'utf8')
                             }
-                            else{
-        
-                                res.write('STREAM COMPLETELEY FINISHED','utf8')  
-                            }
+                            
                           } catch (error) {
                             // console.error('Error parsing JSON:', msg);
                           }
 
-                          console.log('Stream Completelely finished');
+                        //   console.log('Stream Completelely finished');
                           
                     }
                 }
