@@ -9,7 +9,7 @@ const checkUsage=auth.checkUsage
 router.get('/init',async(req,res)=>{
     const {email}=req.query
 
-    if(!email){
+    if(email){
         res.status(400).json({message:'missing email'})
     }
     else{
