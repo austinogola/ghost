@@ -1,3 +1,4 @@
+
 chrome.runtime.onMessage.addListener(async(request,sender,sendResponse)=>{
     if(request.setLang){
         if(request.setLang=='false'){
@@ -347,6 +348,8 @@ const displayGen=(message)=>{
     // if(message==='DONEKABISAAA'){
     //     subjectDelivered=false
     // }
+    msgBox.innerText+=message
+    return
     if(message.toLowerCase().includes("subject") && !onSubject){
         onSubject=true
         // console.log(onSubject);

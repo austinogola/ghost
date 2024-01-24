@@ -3,6 +3,45 @@ let chromeID
 let profEmail
 let ckToken
 
+
+// chrome.runtime.onStartup.addListener((dets)=>{
+//   console.log(dets);
+// })
+
+chrome.runtime.onInstalled.addListener(async(dets)=>{
+  let profile=await getChromeProfile()
+  let {email,chrome_id}=profile
+  if(email){
+    initiateUser(email,chrome_id)
+  }else{
+    chrome.storage.local.set({ghostMailState:'missing email'})
+  }
+  //dets.reason=='install' //dets.reason=='update'
+})
+
+// chrome.runtime.onUpdateAvailable.addListener((dets)=>{
+//   console.log(dets);
+// })
+
+const getChromeProfile=()=>{
+  return new Promise((resolve, reject) => {
+    chrome.identity.getProfileUserInfo({accountStatus:"ANY"},(profile)=>{
+      let {email,id}=profile
+      if(email){
+        chromeID=id
+        profEmail=email
+        resolve({email,chrome_id:id})
+    
+      }
+      else{
+        console.log('missing email attached to chrome profile');
+        resolve({error:'missing email'})
+      }
+    })
+  })
+  
+}
+
   const initiateUser=async(email,id)=>{
     return new Promise(async(resolve,reject)=>{
       fetch(`${HOST}/accounts/init?chrome_id=${id}&email=${email}`,{
@@ -13,7 +52,6 @@ let ckToken
         let res=await response.json()
         if(response.status==200){
           ckToken=res.ghostToken;
-          console.log('token set');
           chrome.storage.local.set({ghostMailState:'loggedIn',ghostToken:ckToken})
           resolve({success:true,token:res.ghostToken})
         }
@@ -29,21 +67,6 @@ let ckToken
      
     })}
 
-
-chrome.identity.getProfileUserInfo({accountStatus:"ANY"},(profile)=>{
-  let {email,id}=profile
-  if(email){
-    console.log('Profile details:',email,id);
-    chromeID=id
-    profEmail=email
-    initiateUser(email,id)
-
-  }
-  else{
-    console.log('missing email attached to chrome profile');
-    chrome.storage.local.set({ghostMailState:'missing email'})
-  }
-})
 
 // chrome.cookies.getAll({url:'http://localhost:3000'},(ck)=>{
 //     console.log(ck)
@@ -88,14 +111,10 @@ chrome.runtime.onConnect.addListener(port=>{
   port.onMessage.addListener(async(message,port)=>{
     if(message.verify){
       if(profEmail){
-        console.log('profEmail is there');
         let initResponse
         initResponse=await initiateUser(profEmail,chromeID)
-        console.log(initResponse);
         port.postMessage(initResponse)
       }else{
-        //If missing email
-        console.log('profEmail is NOT there');
         chrome.storage.local.set({ghostMailState:'missing email'})
         port.postMessage({err:'missing email'})
       }
@@ -208,14 +227,29 @@ chrome.runtime.onConnect.addListener(port=>{
 
       const finishedStream=await Promise.race([readStream(ourReader),sleep(20000)])
 
-      console.log(finishedStream);
+      // console.log(finishedStream);
 
     })
     
   }
 
+  let genArr=['']
+  let subject=''
+  let firstBreak=false
+  let i=0
   const displayGenerated=(string,port)=>{
     try{
+      
+      if(string.includes('\n')){
+        i+=1
+        genArr[i]=''
+        let stArr=string.split('\n')
+        genArr[i-1]+=stArr[0]
+  
+        console.log(subject);
+      }else{
+        // genArr[i]+=string
+      }
       port.postMessage({result:string})
 
     }
