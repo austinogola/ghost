@@ -1,0 +1,11 @@
+{
+    "prefix": "Skrive en epost",
+    "writeBtn": "Skrive",
+    "stopBtn": "slutte å generere",
+    "settingsTitle": "innstillinger",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Lagret",
+      "tab3Title": "Regnskap"
+    }
+  }

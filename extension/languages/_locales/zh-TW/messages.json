@@ -1,0 +1,11 @@
+{
+    "prefix": "寫郵件",
+    "writeBtn": "寫",
+    "stopBtn": "停止發電",
+    "settingsTitle": "設置",
+    "settings": {
+      "tab1Title": "輪廓",
+      "tab2Title": "已保存",
+      "tab3Title": "帳戶"
+    }
+  }

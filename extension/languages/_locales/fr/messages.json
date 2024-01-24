@@ -1,0 +1,11 @@
+{
+    "prefix": "Écrire un e-mail",
+    "writeBtn": "Écrire",
+    "stopBtn": "arrêter de générer",
+    "settingsTitle": "paramètres",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Enregistré",
+      "tab3Title": "Compte"
+    }
+  }

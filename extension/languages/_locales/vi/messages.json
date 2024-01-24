@@ -1,0 +1,11 @@
+{
+    "prefix": "Viết email",
+    "writeBtn": "Viết",
+    "stopBtn": "ngừng tạo",
+    "settingsTitle": "cài đặt",
+    "settings": {
+      "tab1Title": "Hồ sơ",
+      "tab2Title": "Đã lưu",
+      "tab3Title": "Tài khoản"
+    }
+  }

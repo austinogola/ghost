@@ -1,0 +1,11 @@
+{
+    "prefix": "Scríobh ríomhphost",
+    "writeBtn": "Scríobh",
+    "stopBtn": "stop a ghiniúint",
+    "settingsTitle": "socruithe",
+    "settings": {
+      "tab1Title": "Próifíl",
+      "tab2Title": "Shábháil",
+      "tab3Title": "Cuntas"
+    }
+  }

@@ -1,0 +1,11 @@
+{
+    "prefix": "Skriv ett email",
+    "writeBtn": "Skriva",
+    "stopBtn": "sluta generera",
+    "settingsTitle": "inställningar",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Sparad",
+      "tab3Title": "Konto"
+    }
+  }

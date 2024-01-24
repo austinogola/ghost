@@ -1,0 +1,11 @@
+{
+    "prefix": "Escrever um e-mail",
+    "writeBtn": "Escrever",
+    "stopBtn": "pare de gerar",
+    "settingsTitle": "configurações",
+    "settings": {
+      "tab1Title": "Perfil",
+      "tab2Title": "Salvou",
+      "tab3Title": "Conta"
+    }
+  }

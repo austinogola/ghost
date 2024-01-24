@@ -1,0 +1,11 @@
+{
+    "prefix": "ইমেইল লিখ",
+    "writeBtn": "লিখুন",
+    "stopBtn": "উৎপাদন বন্ধ করুন",
+    "settingsTitle": "সেটিংস",
+    "settings": {
+      "tab1Title": "প্রোফাইল",
+      "tab2Title": "সংরক্ষিত",
+      "tab3Title": "হিসাব"
+    }
+  }

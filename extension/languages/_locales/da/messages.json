@@ -1,0 +1,11 @@
+{
+    "prefix": "Skriv en email",
+    "writeBtn": "Skrive",
+    "stopBtn": "stoppe med at generere",
+    "settingsTitle": "indstillinger",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Gemt",
+      "tab3Title": "Konto"
+    }
+  }

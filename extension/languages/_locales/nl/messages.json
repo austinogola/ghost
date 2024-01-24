@@ -1,0 +1,11 @@
+{
+    "prefix": "Een email schrijven",
+    "writeBtn": "Schrijven",
+    "stopBtn": "stoppen met genereren",
+    "settingsTitle": "instellingen",
+    "settings": {
+      "tab1Title": "Profiel",
+      "tab2Title": "opgeslagen",
+      "tab3Title": "Rekening"
+    }
+  }

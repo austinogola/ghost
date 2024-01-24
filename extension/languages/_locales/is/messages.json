@@ -1,0 +1,11 @@
+{
+    "prefix": "Napiši E-mail",
+    "writeBtn": "Pisati",
+    "stopBtn": "prestati generirati",
+    "settingsTitle": "postavke",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Spremljeno",
+      "tab3Title": "Račun"
+    }
+  }

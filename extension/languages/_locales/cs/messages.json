@@ -1,0 +1,11 @@
+{
+    "prefix": "Napsat e-mail",
+    "writeBtn": "Napsat",
+    "stopBtn": "přestat generovat",
+    "settingsTitle": "nastavení",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Uložené",
+      "tab3Title": "Účet"
+    }
+  }

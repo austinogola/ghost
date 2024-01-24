@@ -1,0 +1,599 @@
+#composeWrapper{
+    height: 10px;
+    position: relative;
+    /* top: 5px; */
+    border-top:#ECEFF1 1px solid;
+   
+}
+#composeParent{
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    padding-top:1px ;
+    z-index: 900;
+    width: 99%;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 1);
+}
+#composeParent.hidden{
+    display: none;
+    
+}
+
+.loggedOut#composeParent{
+    border: #590059 1px solid;
+    height: 90px;
+    padding: 10px;
+    text-align: center;
+
+}
+#composeParent.loggedOut .h10{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#composeParent.loggedOut .p10{
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+#composeParent.loggedOut .btnDiv{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#composeParent.loggedOut button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+#composeParent.loggedOut .cancelBtn{
+    /* background-color: #0056CF; */
+
+
+}
+#composeParent.loggedOut a{
+    text-decoration: none;
+}
+#composeParent.loggedOut .signBtn{
+    background-color: #0056CF;
+    color: white;
+}
+#errorDivParent{
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    padding-top:1px ;
+    /* z-index: 900; */
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+#errorDiv{
+    height: 80%;
+    z-index: 900;
+    width: 80%;
+    border: #590059 1px solid;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+}
+#errorHead{
+    display: flex;
+    justify-content: space-between;
+    /* border: #590059 1px solid; */
+}
+#errorTitle{
+    font-size: 15px;
+    font-weight: 500;
+    color: #D81A19;
+}
+#errorX{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#errorExP{
+    margin: 0px;
+    font-size: 13px;
+}
+#errorExplain{
+    /* padding: 5px; */
+}
+
+.main_div{
+    height:100%;
+    position: relative;
+
+}
+.rmvBtn{
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    font-size: 18px;
+    height: 21px;
+    width: 21px;
+    background-color: #590059;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 990;
+}
+.prompt_div{
+    position: relative;
+    height: 70px;
+    max-height: 70px;
+    overflow-y: scroll;
+    border: 1px solid purple;
+}
+
+.loading_overlay{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(255,255,255,0.7);
+    height: 70px;
+    z-index: 3;
+    width:99%;
+}
+.dots{
+    margin:5px;
+    animation: showHideDot 2s ease-in-out infinite;
+}
+.dots#one { animation-delay: 0.2s; }
+.dots#two { animation-delay: 0.4s; }
+.dots#three { animation-delay: 0.6s; }
+
+.prompt_input{
+    min-height:40px !important;
+    max-height: 65px;
+    width:99% ;
+    height:100%;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    padding: 3px;
+    /* border: 1px solid purple; */
+    line-height: 17px;
+    /* text-indent: 110px; */
+    font-weight: 400;
+    font-size: 14px;
+    caret-color: purple;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    outline: none;
+}
+.prompt_input:focus{
+    outline: none;
+}
+.label{
+    border: 2px solid purple;
+    border-radius: 3px;
+    padding: 1px 2px 0 2px;
+    margin: 2px 0 2px 1px;
+    background-color: white;
+    font-weight: 500;
+    height: 20px;
+    color: purple;
+    position: absolute;
+    top:0px;
+    left:0px;
+  }
+
+  .ctrl_div{
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+  }
+  .btn_box{
+    width:35%;
+    display: flex;
+    align-items:end;
+    /* border:1px solid purple; */
+}
+.option_box{
+    width:65%;
+    display: flex;
+    align-items:end;
+    padding-left: 20px;
+    justify-content:end;
+    /* bottom: 3px; 
+    padding-left: 7px;*/
+    position: relative;
+    padding-right: 5px;
+    
+}
+#gen_btn{
+    border: 1px solid white;
+    background-color: purple;
+    color: white;
+    outline: none;
+    font-size:14px;
+    border-radius: 5px;
+    cursor: pointer;
+    height:30px;
+    width:60%;
+    margin-right: 10px;
+    /* margin-top: 5px; */
+    /* float:left; */
+}
+#stop_gen{
+    /* padding: 20px; */
+    height:24px;
+    width:24px;
+    border-radius: 3px;
+    border: 1px solid purple;
+    background-color: purple;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 2px;
+}
+#stopGen_btn{
+    background-color: white;
+    height:50%;
+    width:50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.options{
+    border:1px solid #B0C0D6;
+    border-radius: 8px;
+    height:20px;
+    margin-left: 5px;
+    overflow:hidden ;
+    /* display: flex;
+    align-items: center;
+    justify-content: start; */
+    /* margin-right: 8px; */
+    /* position: absolute; */
+    /* bottom:0px;
+   
+    position: relative; */
+}
+#lang_options{
+    width:40%;
+    border:1px solid purple;
+}
+#lang_select{
+    border:1px solid purple;
+    width:40%;
+    background-color: white;
+    outline: none;
+    font-size: 13px;
+    color: purple;
+    cursor: pointer;
+}
+.option_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    z-index: -2;
+    padding: 2px;
+    background-color: #E2E8F0;
+    max-height: 100%;
+    width: 35%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+#settings{
+    width:30%;
+    display: none;
+
+}
+.settings_div{
+    display: none;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* cursor: pointer; */
+    border:1px solid purple;
+    border-radius: 5px;
+    height:250px;
+    width:300px;
+    position: absolute;
+    bottom: -250px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+}
+.settings_top{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:30px;
+}
+#setP{
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+#setClose{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.settings_tabs{
+    /* border-bottom:#DFE5EE 1px solid; */
+    /* padding:0 2px 0 2px; */
+    border-bottom: 1px solid #B0C0D6;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.tabs{
+    height:12px;
+    padding-bottom:8px;
+    width:25%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+.tabs.active{
+    border-bottom:2px solid purple;
+}
+.allContent{
+    /* border: 1px solid purple; */
+}
+.tabContent{
+    height:80px;
+    /* border: 1px solid pink; */
+    display: none;
+    padding: 5px 5px 5px 15px;
+}
+.tabContent.active{
+    display: block;
+}
+
+#profpicDiv{
+    height:28px;
+    width: 28px;
+    border: 1px red purple;
+    background-color: purple;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color:white;
+}
+#profInfo{
+    width: 80%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+ #emailName{
+    font-size: 12px;
+    font-weight: 600;
+   display: block;
+   line-height: 10px;
+}
+#profileExp{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1px;
+    margin-bottom: 20px;
+}
+
+#inputDiv{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#inputDiv label{
+    font-size: 10px;
+    font-weight: 600;
+}
+#nameInput,#titleInput,#titleLabel,#nameLabel{
+    position: relative;
+    right:10px
+}
+
+#nameInput,#titleInput{
+    font-size: 13px;
+}
+
+#inputDiv #saveBtn{
+    width: 80px;
+    background-color: purple;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.quickPrompt{
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    height:20px;
+    /* width:40%; */
+    width:max-content;
+    text-align: center;
+    border-radius: 3px;
+    color:purple;
+    font-size: 15px;
+    padding: 2px 5px 2px 5px;
+    box-shadow: 2px 2px 10px 2px purple;
+}
+.quickPrompt > *{
+    position: absolute;
+}
+.errParent{
+    height: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:60px;
+}
+.errPrompt{
+    height:80px;
+    width: 350px;
+    /* width:min-content; */
+    /* position:absolute; */
+    /* padding: 10px; */
+    background-color: white;
+    border: 1px solid purple;
+    border-radius: 3px;
+    /* padding-top: 30px; */
+    /* text-align: center; */
+
+}
+.errPrompt #titleDiv{
+    background-color: purple;
+    /* position:absolute;
+    left: 0px;
+    top: 0px; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 20px;
+    margin-bottom: 0px;
+    /* margin-right: 10px; */
+    text-align: left;
+    padding: 5px;
+}
+
+#settings_div small{
+    font-size: 11px;
+}
+
+  section{
+    float: left;
+    position: absolute;
+  }
+
+
+#err_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#err_icons span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #590059;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    cursor: pointer;
+}
+#expls{
+    /* border:1px solid blue; */
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+}
+#expls p{
+    margin: 3px;
+}
+#expls small{
+    color: purple;
+    font-weight: 500;
+    font-size: 16px;
+}
+.gen_div{
+    border:1px solid red;
+    display: flex;
+    height:50px;
+    /* align-items:center; */
+}
+
+
+
+#rd_btn{
+    border: 1px solid purple;
+    background-color: purple;
+    border-radius: 3px;
+    color: purple;
+    display: flex;
+    align-items:center;
+    font-size: 16px;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+
+
+#settings_tt{
+    /* width:20%; */
+   
+}
+
+
+
+#lang_tt{
+    border:1px solid purple;
+    background-color: purple;
+    color: white;
+    
+    /* height: 18px; */
+}
+#lan_div{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-height: 100%;
+    /* border:1px solid #B0C0D6; */
+}
+#select_lang{
+    width:100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: purple;
+}
+.lang_options{
+    font-size: 12px;
+    /* color: purple; */
+
+}
+
+@keyframes showHideDot {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+  }

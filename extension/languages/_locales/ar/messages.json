@@ -1,0 +1,11 @@
+{
+    "prefix": "اكتب رسالة بريد الكتروني",
+    "writeBtn": "يكتب",
+    "stopBtn": "توقف عن التوليد",
+    "settingsTitle": "إعدادات",
+    "settings": {
+      "tab1Title": "حساب تعريفي",
+      "tab2Title": "أنقذ",
+      "tab3Title": "حساب"
+    }
+  }

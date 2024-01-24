@@ -1,0 +1,11 @@
+{
+    "prefix": "Napisz email",
+    "writeBtn": "Pisać",
+    "stopBtn": "przestać generować",
+    "settingsTitle": "ustawienia",
+    "settings": {
+      "tab1Title": "Profil",
+      "tab2Title": "Zapisane",
+      "tab3Title": "Konto"
+    }
+  }

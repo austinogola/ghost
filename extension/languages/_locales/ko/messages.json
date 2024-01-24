@@ -1,0 +1,11 @@
+{
+    "prefix": "이메일을 쓰다",
+    "writeBtn": "쓰다",
+    "stopBtn": "생성 중지",
+    "settingsTitle": "설정",
+    "settings": {
+      "tab1Title": "프로필",
+      "tab2Title": "저장됨",
+      "tab3Title": "계정"
+    }
+  }
