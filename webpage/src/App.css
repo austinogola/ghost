@@ -1,0 +1,209 @@
+.App {
+  /* text-align: center; */
+}
+
+.main{
+  padding: 0px;
+  margin:0px;
+  /* height: 1000px; */
+  background-color: #FFFFFF;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+ 
+}
+.main *{
+  background-color: inherit;
+}
+.main nav{
+  padding-left: 75px;
+  padding-right: 75px;
+  /* border: 1px solid purple; */
+  /* height: 90px; */
+  display: flex;
+  background-color: #FFFFFF;
+  height: 90px;
+  align-items: center;
+
+}
+.main section {
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+.main nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  
+}
+.main nav ul li{
+  list-style: none;
+}
+.main nav ul li:nth-child(1){
+  width: 40%;
+}
+.main nav ul li button{
+  width: 45%;
+  background-color: purple;
+  color: white;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.main section{
+  height: 560px;
+  /* border: purple 1px solid; */
+
+}
+.main section:nth-child(1){
+  display: grid;
+  /* grid-template-columns: 30% 70%; */
+}
+.firstSection{
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.firstSection h1{
+  font-size: 30px;
+  margin: 15px;
+  font-weight: 600;
+}
+.firstSection p{
+  font-size: 20px;
+  margin: 15px;
+}
+.firstSection .textParent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstSection .textDiv{
+  /* height: 50%; */
+}
+.firstSection button{
+  width: 45%;
+  background-color: purple;
+  color: white;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  min-width: 160px;
+  width: fit-content;
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px;
+}
+.firstSection .animationDiv{
+  /* border: 1px solid purple; */
+  /* height:400px ;
+  width: 300px; */
+}
+.firstSection .animationDiv div{
+  border: 1px solid purple;
+  height:550px ;
+  width: 500px;
+}
+.firstSection .animationDiv img{
+  height: auto;
+  width: 100%;
+  object-fit: contain ;
+}
+.firstSection div:nth-child(1){
+  /* border: 1px solid purple; */
+}
+.firstSection div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid purple; */
+}
+.firstSection .featureDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  width: 50%;
+}
+.firstSection .featureDiv span{
+  height: 40px;
+  width: 40px;
+  border: 1px solid purple;
+}
+
+.main footer{
+  background-color: purple;
+  height:500px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: px) {}
+
+/* 300px and lower) */
+@media only screen and (max-width: 300px) {
+  .main section ,.main nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main nav ul li:nth-child(1){
+    width: 20%;
+  }
+}
+
+/* 500px and lower) */
+@media only screen and (max-width: 500px) {
+  .main section ,.main nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main nav ul li:nth-child(1){
+    width: 30%;
+  }
+}
+
+
+/* 760px and lower) */
+@media only screen and (max-width: 800px) {
+  .main section ,.main nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .firstSection{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-columns: 100%;
+  }
+}
+
+
+
+/* 1000px and lower) */
+@media only screen and (max-width: 1000px) {
+  .main section ,.main nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  
+  }
+}
+
+/* 1200px and lower) */
+/* @media only screen and (max-width: 1200px) {
+  .main section {
+    padding-left: 100px;
+    padding-right: 100px;
+  
+  }
+} */

@@ -4,6 +4,7 @@ const jwt=require('jsonwebtoken')
 require('dotenv').config()
 
 const register=async(req,res,next)=>{
+    console.log('Registering in');
 
     return new Promise((resolve,reject)=>{
         const {email}=req.query
@@ -55,6 +56,7 @@ const register=async(req,res,next)=>{
 }
 
 const login=async(req,res,next)=>{
+    console.log('Logging in');
     const {email}=req.query
 
     try{
