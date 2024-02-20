@@ -1,16 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import FirstSection from './components/FirstSection';
+import Home from './pages/home';
+import Policy from './pages/policy';
+import ToS from './pages/tos';
+import Join from './pages/join';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App main">
-      <Navbar/>
-      <FirstSection/>
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/privacy-policy" element={<Policy />}/>
+      <Route path="/terms-of-service" element={<ToS />}/>
+      <Route path="/join" element={<Join />}/>
+    </Routes>
+
+    
   );
 }
 

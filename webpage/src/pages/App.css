@@ -1,7 +1,6 @@
 .App {
   /* text-align: center; */
 }
-
 .main{
   padding: 0px;
   margin:0px;
@@ -14,38 +13,42 @@
 .main *{
   background-color: inherit;
 }
-.main nav{
-  padding-left: 75px;
-  padding-right: 75px;
-  /* border: 1px solid purple; */
-  /* height: 90px; */
-  display: flex;
-  background-color: #FFFFFF;
-  height: 90px;
-  align-items: center;
-
-}
 .main section {
   padding-left: 150px;
   padding-right: 150px;
+  height: 560px;
 
 }
-.main nav ul{
+.Home{
+  background-color: #FFFFFF;
+}
+nav.navbar {
+  padding-left: 75px;
+  padding-right: 75px;
   display: flex;
+  background-color: inherit;
+  height: 90px;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  color: black;
+
+}
+nav.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: inherit;
   height: 100%;
-  width: 100%;
+  width: 50%;
   
 }
-.main nav ul li{
+nav.navbar  ul li{
   list-style: none;
+  color: black;
+  margin-left: 150px;
 }
-.main nav ul li:nth-child(1){
-  width: 40%;
-}
-.main nav ul li button{
+
+nav.navbar ul li button{
   width: 45%;
   background-color: purple;
   color: white;
@@ -56,11 +59,19 @@
   width: 150px;
   cursor: pointer;
 }
-
-.main section{
-  height: 560px;
-  /* border: purple 1px solid; */
-
+nav.navbar a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+}
+nav.navbar button a{
+  color: #FFFFFF;
+  font-size: 16px;
+}
+button{
+  font-family: "Roboto Mono", monospace;
 }
 .main section:nth-child(1){
   display: grid;

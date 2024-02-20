@@ -44,14 +44,49 @@ const addButtons=()=>{
 
         composeWrapper=createElem('div',null,'composeWrapper',parentForm)
         let composeParent=createElem('div',null,'composeParent',composeWrapper)
+        let writeAnP=createElem('span','writeAnP','writeAnP',composeParent)
+        let writeAnLabel=createElem('label','writeAnLabel','writeAnLabel',writeAnP)
+        writeAnLabel.textContent='Write an email'
+        let writeAnNdani=createElem('span','writeAnNdani','writeAnNdani',writeAnP)
+        writeAnNdani.setAttribute('contentEditable',true)
+
+        let fakeGenBDiv=createElem('div','fakeGenBDiv','fakeGenBDiv',composeParent)
+        let fakeGenBtn=createElem('button','fakeGenBtn','fakeGenBtn',fakeGenBDiv)
+        fakeGenBtn.textContent='Write'
+
+        const tbody=$('div[aria-label="Message Body"]')
+        tbody[0].style.paddingTop='70px'
+        tbody[0].style.fontWeight=500
+        tbody[0].style.fontSize='16px'
+
+        const subJectBox=$('input[name="subjectbox"]')
+        subJectBox[0].style.fontWeight=500
+
+        const wholeB=$('div.AD')
+        console.log(wholeB);
+        wholeB[0].style.top='60px'
+        wholeB[0].style.height='500px'
+
+        
+        fakeGenBtn.addEventListener('click',e=>{
+            e.preventDefault()
+            // addOverlay()
+            const prompt_input=document.querySelector('span.writeAnNdani')
+            let prompt="Write an email"+prompt_input.innerText
+            // onSub=false
+            // writtenSub=false
+            handleQuery(prompt,prompt_input)
+        })
+        
+
+        return
 
         //Error div
         makeErrorDiv(composeWrapper)
 
 
 
-        const tbody=$('div[aria-label="Message Body"]')
-        tbody[0].style.paddingTop='105px'
+        
 
 
         const main_div=createElem('div','main_div',null,composeParent)

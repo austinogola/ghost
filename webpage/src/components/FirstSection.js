@@ -21,7 +21,7 @@ function FirstSection() {
         </div>
         <div className='animationDiv'>
           <div>
-          <img src={composeBox} className="compose_box" alt="compose_box" />
+          {/* <img src={composeBox} className="compose_box" alt="compose_box" /> */}
           </div>
            
         </div>

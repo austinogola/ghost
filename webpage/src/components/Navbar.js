@@ -1,14 +1,21 @@
 
-function Navbar() {
+
+function Navbar(props) {
   return (
-    <nav className='navBar' >
+    <nav className='navbar' >
+          <span><a href="/" scroll={true}>GhostMail</a></span>
           <ul>
-            <li><a href="#home" scroll={true}>Logo</a></li>
-            <li><a href="#home" scroll={true}>Home</a></li>
-            <li><a href="#product" scroll={true}>Product</a></li>
-            <li><button>Get Started</button></li>
+              {(props.showAll || props.showHome) && <li><a href="/" scroll={true}>Home</a></li>}
+              {( props.showAll || props.showProduct) && <li><a href="#product" scroll={true}>Product</a></li> }
+              {
+              (props.loginBtn && <li><button><a href="/login">Login</a></button></li>) 
+                ||
+               <li><button><a href="/join">Get Started</a></button></li>
+               }
+             
+
           </ul>
-           {/* <img src={logo} className="Navbar-logo" alt="logo" /> */}
+      
       </nav>
      
 

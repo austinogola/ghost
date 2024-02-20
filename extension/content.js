@@ -335,6 +335,12 @@ let finishedSubject=false
 const geneRated=[]
 
 const displayGen=(message)=>{
+    const tbody=$('div[aria-label="Message Body"]')
+
+    tbody[0].innerText+=message
+
+
+    return
     const subJectBox=$('input[name="subjectbox"]')[0]
     const msgBox=$('div[aria-label="Message Body"]')[0]
     const loading_overlay=$('div.loading_overlay')[0]
