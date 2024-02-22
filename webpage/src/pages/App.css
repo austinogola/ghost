@@ -14,8 +14,8 @@
   background-color: inherit;
 }
 .main section {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 120px;
+  padding-right: 120px;
   height: 560px;
 
 }
@@ -79,7 +79,7 @@ button{
 }
 .firstSection{
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 50% 50%;
 }
 .firstSection h1{
   font-size: 30px;
@@ -98,7 +98,7 @@ button{
 .firstSection .textDiv{
   /* height: 50%; */
 }
-.firstSection button{
+.firstSection .textDiv button{
   width: 45%;
   background-color: purple;
   color: white;
@@ -113,19 +113,22 @@ button{
   margin: 12px;
 }
 .firstSection .animationDiv{
-  /* border: 1px solid purple; */
-  /* height:400px ;
-  width: 300px; */
+  
+  height:500px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 300px; */
 }
 .firstSection .animationDiv div{
-  border: 1px solid purple;
-  height:550px ;
-  width: 500px;
+  /* border: 1px solid purple; */
+  /* height:550px ; */
+  /* width: 500px; */
 }
 .firstSection .animationDiv img{
-  height: auto;
-  width: 100%;
-  object-fit: contain ;
+  /* height: auto; */
+  /* width: 100%; */
+  /* object-fit: contain ; */
 }
 .firstSection div:nth-child(1){
   /* border: 1px solid purple; */

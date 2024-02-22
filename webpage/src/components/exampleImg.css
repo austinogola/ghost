@@ -1,0 +1,121 @@
+.exampleImg{
+    width:90%;
+    border: 1px solid black;
+    height: 90%;
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+  
+  }
+  
+  .exampleImg .topDiv{
+    display: grid;
+    grid-template-rows: 1.2fr 1.2fr 1.2fr 2.2fr;
+  }
+
+  .exampleImg .topDiv > span{
+    width: 100%;
+    /* padding: 2px; */
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topDiv #TopBar{
+    background-color: #464647;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    display: flex;
+    align-items: center;
+    
+  }
+  #TopBar span{
+    color: #CCCCCC;
+  }
+
+  .topDiv #SubjectBar,.topDiv #GhostBar{
+    outline: none;
+
+  }
+
+  .topDiv > span > span{
+    width: 96%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #747786;
+    outline: none;
+    
+    /* border: 1px solid orange; */
+  }
+
+  .topDiv span small{
+    font-size: 13px;
+  }
+  
+  .topDiv #GhostBarSpan{
+    display: block;
+    position: relative;
+    /* border: 1px solid saddlebrown; */
+    /* padding-top: 3px; */
+  }
+
+  #GhostBarSpan label{
+    border: 1px solid purple;
+    margin-top: 3px;
+    padding: 2px;
+    border-radius: 2px;
+    color: purple;
+    position: relative;
+    top: 5px;
+    margin-bottom: 10px;
+
+  }
+
+  #GhostBarSpan #userPromptSpan{
+    position: relative;
+    top: 5px;
+    margin-left: 2px;
+    font-weight: 400;
+  }
+
+  #GhostBarSpan button{
+    height: 30px;
+    width:80px ;
+    position: absolute;
+    bottom: 3px;
+    left: 2px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  #GhostBarSpan button:hover {
+    transform: scale(0.9);
+    /* opacity: 0; */
+  }
+
+  .bottomDiv{
+    /* border: 1px solid orange; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .bottomDiv span{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    min-height: 50%;
+    width: 95%;
+    font-size: 14px;
+    overflow-y:auto
+  }

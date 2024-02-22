@@ -1,4 +1,5 @@
 import composeBox from '../Images/compose_box_scrnshot.png';
+import ExampleImg from './ExampleImg';
 
 function FirstSection() {
     return (
@@ -19,11 +20,9 @@ function FirstSection() {
             </div>
           </div>
         </div>
+
         <div className='animationDiv'>
-          <div>
-          {/* <img src={composeBox} className="compose_box" alt="compose_box" /> */}
-          </div>
-           
+          <ExampleImg />
         </div>
         </section>
        
